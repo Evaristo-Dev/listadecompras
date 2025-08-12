@@ -17,7 +17,7 @@ public class Produto {
     @Column
     private double preco;
     @Column
-    private int qtd;
+    private Integer qtd;
 
 
     public String getId() {
@@ -37,6 +37,13 @@ public class Produto {
     }
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    public int getQtd() {
+        return qtd;
+    }
+    public void setQtd(int qtd) {
+        this.qtd = qtd;
     }
     
     @Override
